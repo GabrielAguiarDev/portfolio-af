@@ -1,0 +1,24 @@
+/* Display the original artwork's visible bounds, preserving the supplied PNG. */
+.frame {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1749 / 417;
+  overflow: hidden;
+}
+.image {
+  position: absolute;
+  left: -5.4317%;
+  top: -53.4772%;
+  width: 109.777%;
+  max-width: none;
+  height: auto;
+}
+.mark {
+  aspect-ratio: 1007 / 674;
+}
+.mark .image {
+  left: -8.2423%;
+  top: -47.4777%;
+  width: 124.5283%;
+}

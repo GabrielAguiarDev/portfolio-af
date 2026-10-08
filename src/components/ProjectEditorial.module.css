@@ -1,0 +1,17 @@
+.sequence, .materials { min-width: 0; }
+.gestures, .palette { display: grid; gap: 2rem; }
+.gestures > li, .palette > li { min-width: 0; }
+.drawing { padding: .5rem; border-block: 1px solid var(--line); }
+.drawing svg { width: 100%; height: auto; }
+.gestureHeading { display: flex; align-items: baseline; gap: .75rem; margin-top: 1rem; }
+.gestureHeading span { color: var(--clay-ink); }
+.sequence .gestureHeading h3, .materials .palette h3 { font-family: var(--serif); font-style: italic; font-size: 1.65rem; line-height: 1.1; }
+.gestures p, .palette p { margin-top: .6rem; font-family: var(--sans); font-size: .875rem; line-height: 1.65; color: var(--mineral-ink); }
+.note { margin-top: 1.5rem; max-width: 75ch; font-family: var(--sans); font-size: .6875rem; line-height: 1.6; color: var(--mineral-ink); }
+.swatch { height: 6.5rem; margin-bottom: 1.1rem; background-color: var(--material); border: 1px solid var(--line); }
+.mineral { background-image: repeating-linear-gradient(135deg, transparent 0 6px, rgb(37 37 34 / .08) 6px 7px); }
+.wood { background-image: repeating-linear-gradient(90deg, transparent 0 10px, rgb(37 37 34 / .1) 10px 11px, transparent 11px 15px); }
+@media (min-width: 600px) {
+  .gestures, .palette { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gutter); }
+  .gestureHeading { flex-direction: column; gap: .5rem; }
+}

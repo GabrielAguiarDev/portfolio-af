@@ -1,0 +1,52 @@
+[
+  {
+    "file": "casa-patio.jpg",
+    "source": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1800&q=85",
+    "license": "https://unsplash.com/license",
+    "notice": "Fotografia de referência, sem vínculo com o estudo ou autoria da arquiteta. Crédito nominal a confirmar antes da publicação profissional."
+  },
+  {
+    "file": "entre-planos.jpg",
+    "source": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=85",
+    "license": "https://unsplash.com/license",
+    "notice": "Fotografia de referência, sem vínculo com o estudo ou autoria da arquiteta. Crédito nominal a confirmar antes da publicação profissional."
+  },
+  {
+    "file": "casa-patio-detalhe.jpg",
+    "source": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=85",
+    "license": "https://unsplash.com/license",
+    "photographer": null,
+    "photoPage": null,
+    "notice": "Fotografia de referência externa, sem vínculo com o estudo ou autoria da arquiteta. Crédito nominal a confirmar antes da publicação profissional."
+  },
+  {
+    "file": "entre-planos-detalhe.jpg",
+    "source": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=85",
+    "license": "https://unsplash.com/license",
+    "photographer": null,
+    "photoPage": null,
+    "notice": "Fotografia de referência externa, sem vínculo com o estudo ou autoria da arquiteta. Crédito nominal a confirmar antes da publicação profissional."
+  },
+  {
+    "file": "pavilhao-barcelona-referencia.jpg",
+    "source": "https://images.unsplash.com/photo-1654684784775-cba2c74738ac?auto=format&fit=crop&w=1600&q=85",
+    "license": "https://unsplash.com/license",
+    "photographer": "Vincenzo Biancamano",
+    "photoPage": "https://unsplash.com/photos/kI1mvm5n8B8",
+    "notice": "Fotografia de referência externa, sem vínculo com o estudo ou autoria da arquiteta.",
+    "subject": "Pavilhão de Barcelona (referência externa)",
+    "originalArchitects": ["Ludwig Mies van der Rohe", "Lilly Reich"],
+    "architectureSource": "https://miesbcn.com/the-pavilion/"
+  },
+  {
+    "file": "pavilhao-barcelona-detalhe.jpg",
+    "source": "https://images.unsplash.com/photo-1585749717863-a8746d785f9e?auto=format&fit=crop&w=1600&q=85",
+    "license": "https://unsplash.com/license",
+    "photographer": "Sam Serrer",
+    "photoPage": "https://unsplash.com/photos/man-statue-on-gray-concrete-wall-iFLrjdo-WPw",
+    "notice": "Fotografia de referência externa, sem vínculo com o estudo ou autoria da arquiteta.",
+    "subject": "Pavilhão de Barcelona (referência externa)",
+    "originalArchitects": ["Ludwig Mies van der Rohe", "Lilly Reich"],
+    "architectureSource": "https://miesbcn.com/the-pavilion/"
+  }
+]
