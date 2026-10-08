@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { projects } from "@/data/portfolio";
+import { architect, projects } from "@/data/portfolio";
 import Lightbox from "@/components/Lightbox";
 import ArchitecturalModel from "@/components/ArchitecturalModel";
 import ProjectExperience from "@/components/ProjectExperience";
@@ -23,8 +23,18 @@ export async function generateMetadata({
     description: `${p.description} ${p.nature}.`,
     alternates: { canonical: `/projetos/${p.slug}` },
     openGraph: {
-      title: p.title,
-      description: p.description,
+      url: `/projetos/${p.slug}`,
+      siteName: `${architect.name} — Portfólio`,
+      locale: "pt_BR",
+      type: "website",
+      title: `${p.title} | ${architect.name}`,
+      description: `${p.description} ${p.nature}.`,
+      images: [{ url: p.image, alt: p.gallery[0].alt }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${p.title} | ${architect.name}`,
+      description: `${p.description} ${p.nature}.`,
       images: [{ url: p.image, alt: p.gallery[0].alt }],
     },
   };

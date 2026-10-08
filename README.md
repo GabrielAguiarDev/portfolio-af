@@ -38,6 +38,10 @@ Cormorant Garamond e Inter são carregadas localmente em WOFF2. As licenças est
 
 ## Publicação e validação
 
-Configure `NEXT_PUBLIC_SITE_URL` com a URL pública absoluta antes do build. Sem ela, o site usa example.com nos metadados e sitemap e bloqueia a indexação. Revise contatos, títulos, descrições, créditos e dados profissionais antes da publicação. Não há formulário de envio, backend ou analytics; o contato usa canais diretos quando configurados.
+O endereço público padrão é `https://portfolio-af-ruby.vercel.app`. Ao usar outro domínio, configure `NEXT_PUBLIC_SITE_URL` com a URL pública absoluta antes do build. Metadados, URLs canônicas, robots e sitemap usam esse endereço.
+
+A prévia de compartilhamento da home inclui nome, profissão, localização, descrição e um cartão de 1200 × 630 pixels com o retrato de `architect.portrait`, gerado em `/og` durante o build. As páginas de projetos usam título, descrição e imagem próprios. Os campos Open Graph e Twitter permitem prévias em aplicativos como WhatsApp e redes sociais, seguindo a [API de imagens do Next.js](https://nextjs.org/docs/app/api-reference/functions/image-response). Após publicar alterações, prévias já compartilhadas podem manter o conteúdo anterior em cache.
+
+Revise contatos, títulos, descrições, créditos e dados profissionais antes da publicação. Não há formulário de envio, backend ou analytics; o contato usa canais diretos quando configurados.
 
 Além de tipos e build, confira desktop e mobile, navegação por teclado, movimento reduzido, carregamento das maquetes, ampliação de desenhos e comportamento da 404 no navegador. A validação de tipos e produção não substitui essa conferência visual.

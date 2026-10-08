@@ -234,4 +234,12 @@ export const projects: Project[] = ([
   ],
 }));
 export const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://example.com";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://portfolio-af-ruby.vercel.app";
+export const siteTitle = `${architect.name} — ${architect.role}`;
+export const siteDescription = `Conheça o portfólio de ${architect.name}, arquiteta e urbanista em ${architect.location}. Estudos de arquitetura e interiores sobre luz, materialidade e formas de habitar.`;
+export const socialImage = {
+  url: "/og",
+  width: 1200,
+  height: 630,
+  alt: `Portfólio de ${architect.name}, ${architect.role}, com seu retrato`,
+};

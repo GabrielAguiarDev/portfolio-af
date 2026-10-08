@@ -24,7 +24,7 @@ const sans = localFont({
 });
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { architect, siteUrl } from "@/data/portfolio";
+import { architect, siteUrl, siteTitle, siteDescription, socialImage } from "@/data/portfolio";
 import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -37,26 +37,28 @@ export const metadata: Metadata = {
     apple: [{ url: "/brand/apple-touch-icon.png?v=2", sizes: "180x180", type: "image/png" }],
   },
   title: {
-    default: `${architect.name} — Arquitetura`,
+    default: siteTitle,
     template: `%s | ${architect.name}`,
   },
-  description:
-    "Portfólio de arquitetura e interiores com estudos demonstrativos sobre luz, materialidade e formas de habitar.",
+  description: siteDescription,
+  authors: [{ name: architect.name }],
+  alternates: { canonical: "/" },
   openGraph: {
+    url: "/",
+    siteName: `${architect.name} — Portfólio`,
     locale: "pt_BR",
     type: "website",
-    title: `${architect.name} — Arquitetura`,
-    description: "Estudos demonstrativos de arquitetura e interiores.",
-    images: [
-      {
-        url: "/images/casa-patio.jpg",
-        width: 1600,
-        height: 1100,
-        alt: "Fotografia de referência arquitetônica sem vínculo com o estudo Casa Pátio ou autoria da arquiteta",
-      },
-    ],
+    title: siteTitle,
+    description: siteDescription,
+    images: [socialImage],
   },
-  robots: { index: Boolean(process.env.NEXT_PUBLIC_SITE_URL), follow: true },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+    images: [socialImage],
+  },
+  robots: { index: true, follow: true },
 };
 export default function RootLayout({
   children,
